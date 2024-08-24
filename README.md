@@ -1,6 +1,6 @@
-# MAD School Website Sitemap
+# MAD School Website 
 
-This README provides an overview of the website structure for [MAD School](https://www.madschool.in/), based on the sitemap.
+This README provides an overview of the website structure for [MAD School](https://www.madschool.in/)
 
 ## Website URL:
 - **Homepage**: [https://www.madschool.in/](https://www.madschool.in/)
@@ -49,7 +49,7 @@ This README provides an overview of the website structure for [MAD School](https
 ### 9. Contact Us
 - Contact URL: [https://www.madschool.in/contact-us](https://www.madschool.in/contact-us)
 
-## Sitemap Mind Map
+## Mind Map
 
 - **Homepage**
   - **About Us**
@@ -77,4 +77,4 @@ This README provides an overview of the website structure for [MAD School](https
 
 ---
 
-This README summarizes the major pages and sections of the MAD School website. You can create a visual mind map using a tool like Lucidchart or MindMeister for better organization and understanding of the sitemap.
+This README summarizes the major pages and sections of the MAD School website. 
