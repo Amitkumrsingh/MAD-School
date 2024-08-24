@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M9JDPW82');</script>
+<!-- End Google Tag Manager -->
+  <!-- favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical"href="https://www.madschool.in/thankyou"/>
+
+  <title>Thank You</title>
+  <style>
+        @font-face {
+      font-family: Avneir;
+      src: url(web_files/Avenir\ Next\ LT\ W04\ Heavy\ Cond.ttf) format('truetype');
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #fddb00;
+      color: #000;
+
+    }
+    .thankyou-container {
+      text-align: center;
+    }
+    h1 {
+      font-size: 44px;
+      font-weight: 900;
+      font-family: Avneir;
+    }
+    p {
+      font-weight: 520;
+      font-size: 16px;
+      font-family: "Rubik", Sans-serif;
+    }
+    .back-button {
+      margin-top: 30px;
+      padding: 5px 20px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 250 !important;
+      font-size: 16px;
+      font-family: "Rubik", Sans-serif;
+    }
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 80px;
+      font-weight: 200 !important;
+      cursor: pointer;
+    }
+
+/* Media Queries for Mobile Screens */
+
+@media only screen and (max-width: 600px) {
+
+body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 30vh;
+      height: 80vh;
+      max-width: 100%;
+      max-height: 100%;
+      overflow-x: hidden;
+    }
+
+    .thankyou-container {
+      text-align: center;
+      margin: 40px 20px 60px 20px;
+    }
+
+    h1 {
+        font-size: 20px !important;
+     }
+
+      p {
+        font-weight: 520;
+        font-size: 16px !important;
+      }
+
+      .back-button {
+        font-size: 16px !important;
+
+      }
+
+      .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 50px;
+      font-weight: 200 !important;
+      cursor: pointer;
+    }
+
+    .thankyou-container img{
+      width:400px !important;
+      margin-bottom: 15px !important;
+    }
+
+
+    }
+
+
+
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9JDPW82"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="thankyou-container">
+    <span class="close-btn" onclick="backToSite()">&times;</span>
+    <h1>"Our team will contact you soon. <br>Meanwhile, sketch these poses."</h1>
+    <img src="./web_files/poses.png" alt="Sketch Poses" width="600" style="margin-bottom:30px;">
+    <p>NEED A FRIEND TO GUIDE MORE?<br>CALL - 9959 75 0006</p>
+    <button class="back-button" onclick="backToSite()">BACK TO SITE</button>
+  </div>
+
+  <script>
+    function backToSite() {
+      // Redirect back to the main site (index.html)
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

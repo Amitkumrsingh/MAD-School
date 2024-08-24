@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- favicon -->
+    <link rel="icon" type="image/png" href="https://www.madschool.in/images/favicon.png">
+
+  <title>Let's Talk</title>
+  <style>
+    @font-face {
+      font-family: Avneir;
+      src: url(web_files/Avenir\ Next\ LT\ W04\ Heavy\ Cond.ttf)format('truetype');
+    }
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #fddb00;
+    }
+
+    .modal {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fddb00;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 74px;
+      margin-bottom: -30px;
+      text-transform: uppercase;
+       font-family: Avneir;
+       font-weight: 900;
+      
+    }
+
+    .lets-form {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin-bottom: 60px;
+    }
+
+    input,
+    select {
+      display: block;
+      outline: none;
+      border: none;
+      height: 2em;
+      font-size: 16px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      padding: 5px 5px 10px 5px;
+      background-color: transparent;
+      color: #000;
+      margin: 20px 40px;
+      font-weight: 550;
+    }
+
+     select {
+        height: 3em!important;
+         padding: 0px 0px 10px 0px !important;
+      }
+
+
+
+    .mobile-getanswer-text{
+       display: none;
+      }
+      
+    input:focus,
+    select:focus {
+      border-bottom: 1px solid #777474;;
+      box-shadow: 0 1px 0 0 #777474;
+      color: #777474;
+    }
+     input:focus::placeholder,
+    select:focus::placeholder {
+      color: #777474;
+    }
+
+    label {
+      margin-top: 15px;
+      display: block;
+    }
+
+    input,
+    select {
+      min-width: 400px;
+      color: #000;
+    }
+
+   .letstalk-btn{
+       text-align: center;
+      justify-content: center;
+     align-items: center;
+    }
+
+  button {
+    
+  margin-top: 40px;
+   margin-bottom: 40px; 
+  padding: 8px 16px; /* Adjust padding to make the button smaller */
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px; /* Adjust font size for smaller text */
+  display: block; /* Change display property to block */
+  margin: 0 auto; /* Center the button horizontally */
+ 
+}
+
+
+    p {
+      margin-top: 20px;
+      font-weight: 550;
+      font-size:17px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+     font-family: "Rubik", Sans-serif;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 80px;
+      font-weight: 200!important;
+      cursor: pointer;
+    }
+
+.img{
+    margin-bottom: 50px;
+}
+
+::placeholder { 
+  color: #000;
+  opacity: 1; 
+}
+
+:-ms-input-placeholder { 
+  color: #000;
+}
+
+::-ms-input-placeholder { 
+  color: #000;
+}
+
+ @media screen and (max-width: 600px) {
+      body {
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      .modal {
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px;
+        width: 100%;
+        height: 100%;
+       
+      }
+
+      .modal img{
+         display: none !important;
+      } 
+      h1 {
+        font-size: 48px;
+      }
+      p {
+        font-weight: 520;
+        font-size: 15px !important;
+      }
+
+      .back-button {
+        font-size: 16px !important;
+        
+      }
+
+      .close-btn {
+        top: 12px;
+       right: 30px;
+       font-size: 51px;
+        font-weight: 200 !important;
+        cursor: pointer;
+       }
+   
+
+      .lets-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+      }
+      select{
+        min-width: 350px;
+        margin: 0;
+        padding: 0;
+      }
+      input,
+      select {
+        min-width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+        padding: 5px 0 10px 0;
+        font-size: 16px ;
+      }
+     
+       h5{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex!important;
+        font-size: 16px;
+        color: red ;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h1>Let's Talk</h1>
+    
+    <h5 class="mobile-getanswer-text">
+      Get answers for all your questions <br>
+     from our admission team
+    </h5>
+    <img  width="600" src="./web_files/form-text.webp" alt="">
+    <form id="contact-form-letstalk">
+      <div class="lets-form">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+       <select name="course">
+        <option disabled="disabled" selected="selected">Courses</option>
+        <option value="NIFT">NIFT</option>
+        <option value="NID">NID</option>
+        <option value="UCEED">UCEED</option>
+        <option value="CEED">CEED</option>
+        <option value="NATA">NATA</option>
+        <option value="BFA">BFA</option>
+        <option value="NIFT station test">NIFT Situation test</option>
+        <option value="NID station test">NID Situation test</option>
+        <option value="Drawing">Drawing</option>
+        <option value="Design Sketching">Design Sketching</option>
+        <option value="Career Counselling">Career Counselling</option>
+        </select>
+
+
+        <select name="state" >
+        <option disabled="disabled" selected="selected" >State</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="West Bengal">West Bengal</option>
+         </select>
+
+      
+        </div>
+        <div class="letstalk-btn">
+         <button type="submit" value="Send" >Submit</button>
+         </div>
+    </form>
+   
+     
+<p>NEED A FRIEND TO GUIDE MORE? </br>CALL - 9959 75 0006</p>
+
+  </div>
+
+  <script>
+    function closeModal() {
+      const modal = document.querySelector('.modal');
+      modal.style.display = 'none';
+     window.location.href = 'scope-of-fashion-designing-in-india.html';
+    }
+
+    // Function to show the modal
+    function openModal() {
+      const modal = document.querySelector('.modal');
+      modal.style.display = 'flex';
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+    //   openModal(); // Show the modal when the page is loaded (you can call this function on a button click or any other event as well)
+    });
+
+     function redirectToThankYou() {
+    // Redirect to the "thankyou.html" page
+    window.location.href = 'thankyou.html';
+  }
+  </script>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('wV8Ycg5TPCw3HjGli');
+        })();
+    </script>
+    <script type="text/javascript">
+        function redirectToThankYou() {
+            window.location.href = 'thankyou.html';
+        }
+
+        function redirectToError() {
+            window.location.href = 'error.html';
+        }
+
+        window.onload = function() {
+            var formIds = [
+                'contact-form-letstalk',
+            ];
+
+            var templateMap = {
+                'contact-form-letstalk': 'template_71adonb'
+            };
+
+            formIds.forEach(function(id) {
+                var form = document.getElementById(id);
+                if (form) {
+                    form.addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        var templateId = templateMap[id];
+                        emailjs.sendForm('service_gq5cyeh', templateId, this)
+                            .then(function() {
+                                redirectToThankYou();
+                            }, function(error) {
+                                redirectToError();
+                            });
+                    });
+                } else {
+                    console.error('Form with id ' + id + ' not found.');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Luthon Southard Script';
+  src: url(./Luthon+Southard+Script.eot);
+  src: url(./Luthon+Southard+Script.eot?#iefix) format('embedded-opentype'),
+       url(./Luthon+Southard+Script.otf) format('otf'),
+       url(./Luthon+Southard+Script.svg#Luthon%20Southard%20Script) format('svg'),
+       url(./Luthon+Southard+Script.ttf) format('truetype'),
+       url(./Luthon+Southard+Script.woff) format('woff');
+}

@@ -1,0 +1,1770 @@
+  @media screen and (min-width: 601px) {
+    .nift-landing-mobile, .get-highly-effective-mobile, .ranks-mobile-cards, .rankers-mobile, .why-mad-school-mobile, .why-mad-btn-mobile, .let-go-mad-mobile, .celebrating-11th-year-mobile, .free-bonus-kit-mobile, .pick-your-batch-mobile, .other-course-design-mobile, .map-mobile, .map-below-form-mobile, .come-join-us-mobile,.sticky .logo .header-mobile, .social-media-mobile, .footer-back-mobile,.navbar{
+        display: none;
+    }
+ }
+
+
+ @media screen and (max-width: 600px) {
+
+
+
+
+    .header, .nift-landing, .get-highly-effective, .roarring-ranks, .ranks-txt, .ranks, .rankers, .ranker-txt-and-btn, .quote-line, .three-img, .why-madschool, .quote-line-full, .let-go-mad, .happy-words, .celebrating-11th-year,.learn-in-coaching, .free-bonus-kit, .bonus-cards, .bonus-card-btn, .quote-line-revision, .pick-your-batch, .form, .other-design, .map, .map-below-form, .come-join-us, .footer-back, .social-media{
+        display: none;
+    }
+
+
+
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background: #000;
+    }
+
+
+    .navbar-not-fixed{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-logo{
+        padding: 10px;
+
+    }
+
+    .navbar-logo img{
+        width: 98.128px;
+        height: 55.852px;
+    }
+
+    .navbar-txt{
+        display: flex;
+        flex-direction: column;
+        color: #FFF;
+        padding: 10px 0px;
+        margin-top: 8px;
+        gap: 10px;
+    }
+
+    .since-with-no{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .since-2012{
+        background: #FFF;
+        color: #000;
+        font-family: "Roboto Condensed";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 1px 2px;
+    }
+
+    .location{
+        color: #FFF;
+        font-family: "Roboto Condensed";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .mobileonly {
+            position: sticky;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 10px;
+        }
+
+	.mobilecall {
+		margin-top: 5px;
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom:0px;
+	}
+
+    .menu-toggle {
+		display: block;
+		cursor: pointer;
+		justify-content: end;
+		align-items: end;
+		text-align: end;
+		margin-top: 0px;
+		margin-bottom:0px;
+	}
+
+    .bar {
+		width: 30px;
+		height: 3px;
+		background-color: #fff;
+		margin: 5px 0
+	}
+
+    .menu-mobile {
+            display: none;
+            padding: 0;
+            background-color: #000
+        }
+    .menu-mobile .courses-menu ul {
+            color: #fff;
+            position: relative;
+            width: 100%;
+        }
+
+	.menu-mobile .courses-menu ul li {
+		padding: 0 0 0 10px;
+		margin: 0 !important;
+		width: 100%;
+		font-size: 16px;
+		text-transform: none;
+		border-bottom: none
+	}
+
+	.menu-mobile .courses-menu:hover {
+		color: #fddb00
+	}
+
+    .menu-mobile.active {
+		display: flex;
+		background-color: #000;
+		color: #fff
+	}
+
+    .menu-mobile.active {
+		flex-direction: column;
+		min-width: 100%;
+		padding: 30px;
+		align-items: left;
+		top: 30px;
+		bottom: 200px;
+		left: 0;
+		right: 0
+	}
+
+
+    .menu-toggle.active {
+		background-color: transparent
+	}
+
+	.menu-toggle.active .bar:nth-child(2) {
+		opacity: 0
+	}
+
+	.menu-toggle.active .bar:first-child {
+		transform: translateY(8px) rotate(45deg)
+	}
+
+	.menu-toggle.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg)
+	}
+
+    .menu-mobile li{
+        margin: 15px 0 0;
+        padding: 0 0 15px;
+        border-bottom: 1px solid #4f4f4f;
+    }
+
+
+    .menu-mobile li a {
+    color: #fff;
+    padding: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.course-menu-angle-down {
+    margin-left: 60%;
+    display: inline;
+}
+
+
+ /* .navbar-menu {
+    display: none;
+  } */
+
+  .toggle-bar {
+    display: block; /* Show toggle bar for mobile */
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .toggle-bar .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+
+
+
+/* Styling for the courses dropdown */
+.courses-menu {
+  position: relative;
+
+}
+.course-menu-angle-down{
+    display: none;
+}
+
+.course-menu ul  li{
+    padding: 5px 0px !important;
+}
+.courses-menu ul {
+  display: none; /* Hide submenu by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  list-style: none;
+  padding: 15px 0 0 0;
+  width: 225px; /* Adjust the width as needed */
+  z-index: 1;
+
+}
+
+.courses-menu:hover > ul {
+  display: block; /* Show submenu on hover */
+}
+
+.courses-menu li {
+  display: block;
+}
+
+.courses-menu a {
+  color: #fff;
+
+}
+
+/* Styling for submenu items */
+.courses-menu ul li {
+  position: relative;
+  float: left;
+}
+
+.courses-menu ul li a {
+  padding: 0px;
+  display: block;
+}
+
+.courses-menu ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: #000;
+  display: none;
+}
+
+.courses-menu ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.courses-menu ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+
+
+.courses-menu .menu-item {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    width: 200px;
+    font-size: 16px;
+    text-transform: none;
+    border-bottom: 1px solid white;
+}
+
+/* Submenu styles */
+.courses-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+/* Adjust submenu positioning */
+.courses-menu .menu-item:hover .submenu {
+    display: block;
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+}
+
+.courses-menu .submenu li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+     border-bottom: 1px solid white;
+
+     width: 100%;
+}
+
+.courses-menu .submenu a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    /* transition: background-color 0.3s; */
+}
+
+ .courses-menu .submenu a:hover {
+    background-color: #000;
+    text-transform: none;
+}
+
+
+.course-menu-angle-right{
+  margin-left: 75%;
+}
+
+
+
+/* navbar end */
+
+
+    .nift-landing-mobile{
+        background: url("../nift-assets/Rectangle (25).webp") right top/50vh no-repeat #f9f9f9;
+        min-height: 500px;
+        padding:5px 0 0 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grab-text-mobile{
+        padding-top: 500px;
+    }
+
+    .grab-text-mobile p{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+
+    .grab-text-mobile h1{
+        color: #231F20;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    .grab-text-mobile h3{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(252,218,0,1) 50%, rgba(252,218,0,1) 100%);
+        margin-bottom: 10px;
+        margin: 0% 18%;
+    }
+
+
+    .grab-text-mobile h2{
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px; /* 153.333% */
+        margin-bottom: 10px;
+    }
+
+    .need-a-friend-mobile{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .need-a-friend-mobile p{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    .need-a-friend-mobile .phone span{
+        color: #231F20;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .need-a-friend-mobile button{
+    width: 313px;
+    height: 30px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+
+.need-a-friend-mobile button a{
+   color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+
+.career-counseling-container-form-mobile {
+	display: flex;
+	flex-direction: row;
+	background-color: #f9f9f9;
+    margin:20px 10px 40px 10px ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-counseling-form-mobile {
+	display: flex;
+	flex-direction: column;
+    width: 344px;
+    height: 428px;
+    flex-shrink: 0;
+
+}
+
+.career-counseling-container-footer-form-mobile {
+	border-radius: 25px;
+	padding: 15px 10px 10px 5px;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	background-color: #FCDA00;
+
+
+}
+
+.career-counseling-container-mobile .footer-form button:hover {
+		background-color: #FCDA00;
+		color: #000;
+		border-bottom: 4px solid #fff
+	}
+
+    /* .course-options{
+    padding: 5px 320px 5px 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    background-color: #ffffff !important;
+    color: #353434 !important;
+    border: 2px solid #bcbcbc;
+    } */
+
+
+.career-counseling-container-form-mobile {
+	justify-content: center;
+	align-items: center;
+	text-align: center
+}
+
+.career-counseling-container-form-mobile input[type=text],
+.career-counseling-container-form-mobile select {
+    padding-left: 10px;
+	color: #707070;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+	margin-bottom: 12px;
+	border: none;
+	border-radius: 10px;
+    background: #FFF;
+    width: 296px;
+    height: 52px;
+    flex-shrink: 0;
+}
+
+.career-counseling-form-mobile::placeholder {
+	color: #777474
+}
+
+.career-counseling-container-form-mobile button {
+    margin-top: 12px;
+
+	background-color: #000;
+	color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+	cursor: pointer;
+	border-radius: 10px;
+	border: none;
+    width: 278px;
+    height: 50px;
+    flex-shrink: 0;
+
+}
+
+.career-counseling-container-form-mobile button:hover {
+		background-color: #fff;
+		color: #000;
+	}
+
+
+/* Get highly effective start */
+
+.get-highly-effective-mobile{
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+    padding: 10px;
+}
+
+.get-highly-effective-txt-mobile{
+     text-align: left;
+     margin: 30px 20px 20px 20px;
+}
+
+.get-highly-effective-txt-mobile h1{
+    background: linear-gradient(90deg, #FFED97 0%, #B08A46 26%, #FED517 62.5%, #FFF9DF 96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 30px 0px 30px 0px;
+}
+
+.get-highly-effective-txt-mobile p{
+    color: #FFF!important;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+
+
+.get-highly-effective-txt-mobile p:nth-child(1){
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.get-highly-effective-txt-mobile p:nth-child(2){
+    color: #FCDA00;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.almuni-video-and-text-mobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 0px;
+
+}
+
+.Achivement{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.highest-selection{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 30px;
+    align-items: left;
+    text-align: left;
+
+}
+
+.highest-selection img{
+    width: 58px;
+    height: 62px;
+
+}
+
+.highest-selection h1{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px; /* 140% */
+    margin-top: 10px;
+
+}
+
+.achivmement-points{
+    margin: 0px 20px 0px 20px;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+
+}
+
+.achivmement-points ul li{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px; /* 140% */
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.achivmement-points ul li span{
+    margin-right: 10px;
+
+}
+
+
+.achivmement-points ul{
+    list-style-type: "";
+}
+
+.almuni-video-mobile{
+   width: 360.004px;
+    height: 234px;
+    border-radius: 22px;
+    flex-shrink: 0;
+    margin: 20px 10px;
+}
+
+.almuni-text-mobile{
+    text-align: left;
+    align-items: left;
+}
+
+.almuni-text-mobile h1{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.almuni-text-mobile p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.get-highly-effective-btn-mobile{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+
+}
+
+.get-highly-effective-btn-mobile button{
+     border-radius: 50px;
+     padding: 20px;
+     border: none;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+}
+
+.get-highly-effective-btn-mobile button a {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.get-highly-effective-btn-mobile button img{
+    margin-left: 10px;
+
+}
+
+
+/* ranks mobile start */
+
+.ranks-mobile-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.rank-mobile-card{
+    border-radius: 24px;
+    background: #F3F3F3;
+    margin: 10px;
+    padding: 20px;
+}
+
+.rank-mobile-card img{
+    width: 46px;
+    height: 46px;
+    margin-bottom: 15px;
+}
+
+
+.rank-mobile-card h1{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+     margin-bottom: 15px;
+}
+
+.rank-mobile-card p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     margin-bottom: 15px;
+}
+
+
+.rankers-mobile{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.rorr-mobile h1{
+    text-align: center;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: rgba(185, 163, 21, 0.50);
+    font-family: Montserrat;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    background: linear-gradient(90deg, #FD0 2%, #FF8686 22.08%, #F7DC2A 36.77%, #FD0 52.93%, #ECAAED 66.16%, #FD0 83.79%, #998500 99.95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.rankers-img-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.ranker-girls-mobile{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px 0px 20px 20px;
+}
+.ranker-girls-mobile img{
+     border-radius: 50%;
+     width: 118.513px;
+    height: 118.513px;
+    flex-shrink: 0;
+    margin-right: 10px;
+
+}
+
+.ranker-girls-text-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    align-items: left;
+    margin-top: 10px;
+}
+
+.ranker-girls-text-mobile p:nth-child(1){
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ranker-girls-text-mobile p:nth-child(2){
+    color: #231F20;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.ranker-girls-text-mobile p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* rankers text and btn */
+
+.ranker-txt-and-btn-mobile{
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+
+.ranker-txt-and-btn-mobile h1{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 50px 10px 10px 10px;
+}
+
+.ranker-txt-and-btn-mobile h2{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 20px 30px;
+}
+
+.ranker-txt-and-btn-mobile p{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 147.059% */
+    margin: 20px 10px;
+}
+
+
+.ranker-txt-and-btn-mobile button{
+    border-radius: 40px;
+    background: #000;
+    padding: 15px 30px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.ranker-txt-and-btn-mobile button a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.rankers-images-only-three img{
+    border-radius: 19px;
+}
+
+
+.why-mad-school-mobile{
+    background: #F1F1F1;
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+
+}
+
+.why-mad-school-mobile h1{
+    margin: 20px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.why-mad-school-mobile p{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 30px;
+}
+
+.why-mad-school-mobile img{
+    margin: 10px 20px;
+}
+
+
+
+.learn-cards-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.learn-card-mobile{
+    border-radius: 14px;
+    background: #FFF;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.learn-card-mobile p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+
+.learn-title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+
+}
+
+.learn-title h1{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px 0px 5px 0px;
+
+}
+
+.learn-title p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.why-mad-btn-mobile{
+     background: #F1F1F1;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+}
+
+.why-mad-btn-mobile button{
+    border-radius: 40px;
+    background: #000;
+    border: none;
+    padding: 15px 30px;
+    border: none;
+    margin-bottom: 30px;
+    margin-top: 40px;
+
+}
+
+.why-mad-btn-mobile button a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Embrace for Obsolute mobile*/
+
+
+
+.embrace-mobile{
+    display: flex;
+    text-align: left;
+    margin: 20px;
+    flex-direction: column;
+
+}
+
+.embrace-mobile img{
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    width: 71.893px;
+    height: 95.269px;
+    flex-shrink: 0;
+}
+
+.embrace-mobile p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.embrace-mobile p span{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.two-imgs-jealous-mobile{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.lets-go-mad-mobile{
+    text-align: center;
+    margin: 25px;
+}
+
+.lets-go-mad-mobile h1{
+    color: #000;
+font-family: Montserrat;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 30px;
+}
+
+.lets-go-mad-mobile h1 span{
+    color: #000;
+text-align: center;
+font-family: Montserrat;
+font-size: 35px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+margin-bottom: 5px;
+}
+
+.lets-go-mad-mobile h2{
+   color: #000;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: left;
+margin-bottom: 20px;
+}
+
+
+.lets-go-mad-mobile p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.lets-go-mad-mobile button{
+    border-radius: 40px;
+    background: #000;
+    padding: 15px 30px;
+    border: none;
+}
+
+.lets-go-mad-mobile button a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+/* start celebrating-11th-year-mobile */
+
+.celebrating-11th-year-mobile{
+    border-radius: 15px;
+    background: #000;
+    text-align: center;
+
+
+}
+.celebrating-11th-year-img-mobile{
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+.celebrating-11th-year-txt-mobile{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.celebrating-11th-year-txt-mobile img{
+    width: 161px;
+    height: 95px;
+    margin: 20px 0px;
+}
+
+.celebrating-11th-year-txt-mobile h1{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+.celebrating-11th-year-txt-mobile h2{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.celebrating-11th-year-txt-mobile p{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 166.667% */
+
+}
+
+
+
+/* start free-bonus-kit-mobile */
+
+
+.free-bonus-kit-mobile{
+    padding: 20px;
+    border-radius: 15px;
+    background: #000;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.free-bonus-img-mobile{
+    margin: 50px 0px 20px 0px;
+
+}
+
+.free-bonus-img-mobile img{
+     max-width: 99%;
+}
+
+.free-bonus-kit-txt-mobile{
+    text-align: center;
+}
+.free-bonus-kit-txt-mobile img{
+    max-width: 99%;
+}
+
+.free-bonus-kit-txt-mobile h1{
+    font-family: Poppins;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    background: linear-gradient(91deg, #FD0 -1.39%, #FFFAD9 12.69%, #FD0 41.35%, #FFEF88 64.99%, #94820D 80.08%, #FBF4C6 94.16%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: left;
+padding-left: 0px;
+}
+
+.free-bonus-kit-txt-mobile p{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;
+padding-left: 10px;
+
+}
+
+.bonus-cards-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+
+
+.bonus-card-mobile{
+    display: flex;
+    flex-direction: column;
+    border-radius: 19px;
+    background: #FFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+
+}
+
+
+.bonus-card-mobile p{
+    border-radius: 30px;
+    background: #FFDD00;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 5px 30px;
+    margin-top: -40px;
+
+}
+
+.bonus-card-mobile h1{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.bonus-card-mobile h2{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Card bonus btn */
+.bonus-card-btn-mobile{
+    text-align: center;
+    background: #000;
+    padding-bottom: 60px;
+}
+
+.bonus-card-btn-mobile button{
+    background: #FFF;
+     border-radius: 50px;
+     padding: 20px;
+     border: none;
+     margin-top: 50px;
+}
+.bonus-card-btn-mobile button img{
+    margin-left: 10px;
+}
+
+.bonus-card-btn-mobile button a{
+    text-decoration: none;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+/* pick your batch */
+.pick-your-batch-mobile{
+  text-align: center;
+  color: #000;
+    border-radius: 15px;
+    background: #FCDA00;
+   padding: 50px 20px 40px 30px;
+}
+.pick-your-batch-mobile input,select {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+      #full_name,#phone_number {
+         min-width: 93%;
+            background-color: #fff;
+            color: #000;
+            margin-bottom: 10px;
+            padding: 12px 5px 12px 20px;
+            margin-top: 5px;
+            border: none;
+            color: #707070;
+            font-family: Montserrat;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+        }
+
+        .duration_pick,.mode_pick,.days_pick{
+           margin-bottom: 10px;
+            padding: 15px 20px;
+            color: #707070;
+            font-family: Montserrat;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border: none;
+        }
+
+
+
+        input[type="submit"]:hover {
+            background-color: #fddb00;
+        }
+
+        .other-course-design-mobile{
+            text-align: center;
+            margin: 20px;
+        }
+
+.other-course-design-mobile h1{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.other-course-design-mobile .other-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.other-card{
+    background: #D4D4D433;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.other-card-btn{
+    text-align: center;
+    background: #FFF;
+
+    padding-bottom: 60px;
+}
+
+.other-card-btn button{
+    background: #000;
+    color: #FFF;
+     border-radius: 50px;
+     padding: 20px;
+     border: none;
+     margin-top: 50px;
+}
+.other-card-btn button img{
+    margin-left: 10px;
+}
+
+.other-card-btn button a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Start Map */
+.map-mobile{
+border-radius: 15px;
+background: #FCDA00;
+padding: 20px;
+}
+
+
+
+
+
+
+.map-txt-mobile{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+    gap: 15px;
+    padding: 10px 30px 100px 10px;
+
+}
+
+.map-txt-mobile h2{
+    color: #CF1C24;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #CF1C24;
+    font-family: "Luthon Southard Script";
+    font-size: 48.074px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.map-txt-mobile h1{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.map-txt-mobile p{
+    color: #000;
+    font-family: Avenir;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+
+.map-txt-mobile button{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 15px;
+    background: #000;
+    border: none;
+    width: 184px;
+    height: 45px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.map-txt-mobile button a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.map-below-form-mobile{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background:#F3F3F3;
+    border-radius: 28px;
+    border: 2px solid #DFDFDF;
+    box-shadow: drop-shadow(0px 4px 39px rgba(0, 0, 0, 0.10));
+    margin: -110px 10px 0 10px;
+
+}
+
+.input-div-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+
+
+
+.input-div-mobile input{
+    width: 300px;
+    height: 52px;
+    border: none;
+    background: #FFF;
+    padding: 5px 20px;
+    margin: 10px 10px;
+    color: #4D4D4D;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 1px solid #9D9D9D;
+
+}
+
+.input-div-mobile button {
+    background: #000;
+    color: #FFF;
+     padding: 10px 0px;
+      border: none;
+     text-align: center;
+     margin: 0px 60px;
+}
+
+.input-div-mobile button a{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 203px;
+    text-decoration: none;
+}
+
+
+
+
+.come-join-us-mobile{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 60px 30px;
+}
+
+.come-join-us-mobile p{
+    color: #000;
+
+font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 40px;
+}
+
+.come-join-us-mobile h1{
+    color: #231F20;
+
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+
+.come-join-us-mobile h2{
+    color: #231F20;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+
+/* Footer */
+
+.footer-back-mobile {
+		background: url("./web_files/Asset\ 55.png") top no-repeat #000;
+		background-size: contain !important;
+		max-width: 100%;
+		height: 750px;
+		margin: 0;
+		display: flex;
+		flex-direction: column !important;
+		padding-left: 12px
+	}
+
+	.footer-grids-mobile {
+		display: grid;
+		grid-gap: 10px;
+		padding: 0 30px;
+		margin-left: -20px;
+		background-color: #000
+	}
+
+	.footer-logo {
+		margin-top: 100px;
+		padding: 10px;
+		width: 100%;
+		height: auto
+	}
+
+	.footer-logo p {
+		font-size: 10px !important;
+		align-items: left !important;
+		padding: 0px 10px 0px 0px;
+		color: #fff;
+	}
+
+	.menu-item {
+		text-transform: uppercase;
+		list-style-type: none;
+		font-size: 10px
+	}
+
+	.menu-item a {
+		color: #fff !important
+	}
+
+	.footer-grids-mobile .heading h3 {
+		font-family: Rubik, Sans-serif;
+		font-size: 12px;
+		font-weight: 600;
+		color: #fff;
+		margin: 5px 0
+	}
+
+	.footer-grids-mobile p {
+		font-size: 14px
+	}
+
+	.white-logo {
+		margin-bottom: 5px
+	}
+
+	.our-courses {
+		margin-right: 20px
+	}
+
+	.our-courses .menu-item {
+		margin-bottom: 7px
+	}
+
+	.corporate-office .office-details p {
+		font-size: 10px;
+		color: #fff
+	}
+
+	.social-media {
+		margin-left: -20px;
+	}
+
+	.mobile-social-media-icon {
+		display: flex;
+		flex-direction: row !important;
+		/* margin-bottom: 20px */
+	}
+
+	.custom-social-icons {
+		display: flex;
+		flex-direction: column-reverse !important;
+		align-items: center;
+		justify-content: center;
+		background-color: #000;
+		padding: 10px;
+
+	}
+
+	.elementor-grid-item {
+		width: 25px;
+		height: 25px;
+		border: 1px solid #fff;
+		border-radius: 4px;
+		margin: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center
+	}
+
+	.elementor-icon {
+		color: #fff;
+		font-size: 14px
+	}
+
+	.custom-social-icons .copyright {
+		margin-right: 0 !important;
+		color: #fff;
+		font-size: 10px
+	}
+    .footer-grids-mobile {
+		grid-template-columns: repeat(2, 1fr);
+        background: #000;
+	}
+
+
+}

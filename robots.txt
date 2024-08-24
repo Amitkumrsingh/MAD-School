@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /:2083/
+Disallow: /cpanel
+Disallow: /webmail
+Disallow: /cgi-bin/
+Disallow: /thankyou.html
+Disallow: /Nift-coaching.html
+Disallow: /Nid-coaching.html
+Sitemap: https://www.madschool.in/sitemap.xml

@@ -1,0 +1,463 @@
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1.125em;
+  line-height: 1.4;
+}
+
+
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+
+.grab{background:url('../img/pencil-hair.png') no-repeat left top; min-height:600px;     padding: 2em 0; }
+.grab .right {    padding-top: 320px;}
+.logosection	{margin-top:0em}
+.logosection .text	{font-family: "Bebas Neue", Sans-serif;    font-size: 18px;}
+.logosection img{width:130px; height:auto; float: left; }
+.logosection .text .mobile{    text-align: left;    font-weight: 900;    letter-spacing: 1.8px;}
+.logosection p{margin-bottom:0}	
+.logosection .text{float: left;    clear: left;    padding-top: 20px;}
+h1 { font-family: "Kanit", Sans-serif;    font-size: 50px;    font-weight: 700;    line-height: 1.2em; text-transform:uppercase}
+h3{    font-family: "Bebas Neue", Sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: 400; }
+h2{font-family: 'Luthon Southard Script'; font-size:40px; color:#e31c24}
+
+.blackbtn{ margin: 1.25em 0; width: auto;}
+.blackbtn a{text-decoration:none; background:#000; color:#fff; font-family: "Bebas Neue", Sans-serif; font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400; padding:0.5em 1.5em;}
+.grab .blackbtn{ float:right}
+.blackbtn a:hover{text-decoration:none}	
+
+.whymadschool{background:url('../img/whymad.png') #ffbf05 no-repeat right bottom; min-height:680px; padding: 2em 0; background-size: contain; }
+
+.roar, .gomad, .faq, .address{padding:2em 0	}
+
+.whymadschool .cpadding{padding-top: 30px;    padding-bottom: 200px;}
+
+.direct{background:url('../img/direct-img.jpg')  no-repeat right top; min-height:680px;}
+.direct .cpadding{padding-top:550px}
+
+.roarcenter{text-align:center;    padding: 30px 0;}
+.student{padding-top:20px; text-transform:uppercase}
+.student .photo{float:left;    margin-right: 20px; }
+.student .photo img{max-width:150px}
+.student p.bold{font-weight:bold}
+.student p{margin-bottom:0}
+.student .name {margin-top: 20px;}
+
+
+
+.mileage, .loans{background:#000; color:#fff; padding: 2em 0;}
+label{font-family: "Kanit", Sans-serif;    font-size: 22px;    font-weight: 500; text-transform:uppercase; display:block}
+
+.courses{background:#DC1C24; color:#fff; padding:2em 0}
+.address .blackbtn	{width: auto;    float: left; margin-right:20px}
+.bottomimg{background:url('../img/look.png') no-repeat center top; min-height:600px}
+
+
+
+
+/*FAQs styles*/
+.faq{background:#f4f5f8}
+
+.faq h2{font-size:1em;    font-family: inherit;}
+
+.faq .btn-link{color:#1f1f1f}
+.faq .btn-link:hover{text-decoration:none}
+.faq .card-header{border:none}
+.faq .accordion>.card{border:1px solid #85ecef; margin:1em 0 }
+.faq  .card-body p{color:#8f8f8f;     text-align: left;    padding: 0 1em;}
+.faq .btn:focus, .faq .btn:active{box-shadow:none; border:none}
+
+
+
+.collapsible-link {
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.collapsible-link::before {
+  content: "\f107";
+  position: absolute;
+  top: 50%;
+  right: 0.1rem;
+  transform: translateY(-50%);
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 1.1rem;
+}
+
+.collapsible-link[aria-expanded="true"]::before {
+  content: "\f106";
+}
+
+
+.collapsible {
+  background-color: #FFFFFF;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+ border-color:#A6EEF1; border-spacing:1px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  
+}
+
+.active, .collapsible:hover {
+  background-color: #FFFFFF;
+
+
+}
+
+.content { padding: 0 18px;  display: none;  overflow: hidden;  background-color: #f1f1f1;}
+
+.load {    padding: 0.5em 2.5em;    text-align: center;    text-decoration: none;        font-size: 16px;    cursor: pointer;
+    border-color: #f4f5f8;    -webkit-appearance: none;    appearance: none;    border: 1px solid #252525;    font-family: "Bebas Neue", Sans-serif;}
+
+button.load:focus{border: 1px solid #252525}
+
+/*modal popup*/
+
+#form .modal-dialog{width:90%;max-width:none}
+#form .modal-header{border-bottom:none; text-align:center}
+#form .modal-content{background:#ffd100}
+::placeholder {color: #000;  font-size: 16px; font-weight:500}
+#form input:focus { outline-width: 0;}
+#form button.close{text-align:right;padding-right: 10px;    font-size: 37px;    color: #000;    font-weight: normal;}
+#form input[type=text] {
+    box-sizing: border-box;  
+	border-top:0;
+	border-right:0;
+	border-left:0;
+	border-bottom:1px solid #000;
+	border-radius:0;
+	background:#ffd100;
+	 outline-width: 0;
+	 outline: none;
+	 font-size:16px;
+	  font-weight:500;
+	  color:#000;
+	  
+}
+
+#form input[type=text]::placeholder, #form input[type=email]::placeholder {color: #000;  font-size: 16px; font-weight:500; border:none}
+
+#form input[type=text]:focus{ outline-width: 0; outline: none}
+
+
+#form input[type=email] {
+    box-sizing: border-box;  
+	border-top:0;
+	border-right:0;
+	border-left:0;
+	border-bottom:1px solid #000;
+	border-radius:0;
+	background:#ffd100;
+	 outline-width: 0;
+	 outline: none;
+	  font-size:16px;
+	  font-weight:500;
+	  color:#000; outline: none;
+}
+
+#form input:focus{border:0}
+#form input[type=email]:focus{ outline-width: 0; outline: none}
+#form .form-control:focus{box-shadow:none}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none; border:none
+}
+
+
+#form select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;     
+   background: url('../img/downarr.png') no-repeat right center;
+   background-color:#ffd100;
+   border-top:0;
+	border-right:0;
+	border-left:0;
+	border-bottom:1px solid #000;
+	 font-size:16px;
+	  font-weight:500;
+	  color:#000;
+	  border-radius:0;
+}
+
+#form .blackbtn a{padding:10px 3em}
+#form p{margin-top:2em; font-size:16px; font-weight:500}
+
+@media screen and (min-width: 768px) {
+    .mobileOnly{display:none !important}
+  .logosection .text {     clear: none;    padding-top: 0;    margin-left: 20px;}
+  .grab .right{padding-top: 300px;}
+  .whymadschool .cpadding{ padding-bottom: 750px;}
+  
+}
+
+
+@media screen and (min-width: 1024px) {
+#form .modal-dialog{width:70%;max-width:none}
+.mobileOnly{display:none !important}
+h1{font-size:80px} 
+.grab .right {    padding-top: 100px;}
+.whymadschool .cpadding {    padding-top: 50px; padding-bottom:30px}
+.direct .cpadding {    padding-top: 80px;    padding-bottom: 30px;}
+.loans{padding:5em 0}
+.loans h1{font-size: 60px;    line-height: 58px;}
+
+ 
+ 
+}
+
+
+
+
